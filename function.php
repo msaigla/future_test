@@ -19,7 +19,7 @@ if($_POST['add'])
 echo "<p style='color: darkgreen; font-size: 18px;'>".$sysMessages."</p>" ;
 function userList($connect)
 {
-    $comments = $connect->query("SELECT name, text, DATE_FORMAT(date,'%H:%i %d.%m.%y') FROM chat");
+    $comments = $connect->query("SELECT name, text, DATE_FORMAT(date,'%H:%i %d.%m.%y') FROM chat ORDER BY id");
     $num = 0;
     //засовываем все записи в ассоциативный массив и перебираем их
     while(($comment = $comments->fetch_assoc()) != FALSE){

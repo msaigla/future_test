@@ -9,7 +9,7 @@
 <div class="content">
     <div class="header">
         <div class="contact">
-            <p>Телефон: (499) 340-94-71</p>
+            <p style="color: black">Телефон: (499) 340-94-71</p>
             <p>Email: info@future-group.ru</p>
         </div>
         <div class="title">Комментарии</div>
@@ -21,8 +21,8 @@
         $connect->close();
         ?>
         <form method="post">
-            <input name="name" type="text" placeholder="Имя"/>
-            <input name="text" type="text" placeholder="Текст"/>
+            <input name="name" type="text" placeholder="Имя"/></br>
+            <textarea name="text" type="text" placeholder="Текст"></textarea>
             <input type="submit" name="add" value="Отправить"/>
         </form>
     </div>

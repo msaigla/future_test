@@ -3,6 +3,8 @@
     flex-direction: column;
     margin: 25px auto;
     width: 960px;
+    font-family: "Myriad Pro";
+    font-size: 21px;
 }
 
 .header {
@@ -15,7 +17,6 @@
     bottom:0;
     left: 0;
     font-size: 64px;
-    font-family: "Myriad Pro";
 }
 .logo {
     position:absolute; /* добавили */
@@ -30,4 +31,5 @@
     position: absolute;
     top: 0;
     left: 0;
+    font-size: 16px;
 }
