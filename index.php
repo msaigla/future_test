@@ -8,7 +8,12 @@
 <body>
 <div class="content">
     <div class="header">
-        <h2>Комментарии </h2>
+        <div class="contact">
+            <p>Телефон: (499) 340-94-71</p>
+            <p>Email: info@future-group.ru</p>
+        </div>
+        <div class="title">Комментарии</div>
+        <div class="logo"><img src="images/logo.png"></div>
     </div>
     <div class="body">
         <?php userList($connect);?>

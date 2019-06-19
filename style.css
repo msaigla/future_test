@@ -1,4 +1,33 @@
 .content {
-    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
     width: 960px;
+}
+
+.header {
+    position:relative;
+    height: 204px;
+}
+
+.title {
+    position:absolute; /* добавили */
+    bottom:0;
+    left: 0;
+    font-size: 64px;
+    font-family: "Myriad Pro";
+}
+.logo {
+    position:absolute; /* добавили */
+    right: 0;
+}
+.logo img{
+    height: 100%;
+    width: auto;
+}
+
+.contact {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
