@@ -19,13 +19,13 @@ if($_POST['add'])
 echo "<p style='color: darkgreen; font-size: 18px;'>".$sysMessages."</p>" ;
 function userList($connect)
 {
-    $comments = $connect->query("SELECT name, text, DATE_FORMAT(date,'%H:%i %d.%m.%y') FROM chat ORDER BY id");
+    $comments = $connect->query("SELECT *, DATE_FORMAT(date,'%H:%i %d.%m.%y') as date_format FROM chat 
+									ORDER BY date DESC");
     $num = 0;
     //засовываем все записи в ассоциативный массив и перебираем их
     while(($comment = $comments->fetch_assoc()) != FALSE){
         //выводим список на экран
-        $date = date_create($comment['date']);
-        echo "<p><b>".$comment['name']."</b> ".date_format($date, 'H:i d.m.Y')." </br> ".$comment['text']."</p>";
+        echo "<p><b>".$comment['name']."</b> ".$comment['date_format']." </br> ".$comment['text']."</p>";
     }
 }
 //вывод системных сообщений
